@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Grates</title>
+    <style>
+        /* The CSS style */
+
+        /* The Font which is being used on the page  */
+        body {
+            background-color: #ddd;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+
+         /* Styling the border  */
+        .container {
+            max-width: 800px; 
+            margin: 0 auto;
+            border: 2px solid black; 
+            padding: 20px; 
+            margin-top: 5px;
+        }
+
+        /* Navbar being styled */
+        .navbar {
+            background-color: #808080;
+            overflow: hidden;
+            text-align: center;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        /* Styling for navigation links */
+        .navbar a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding:  14px 20px;
+            text-decoration: none;
+            background-color: transparent; /* added to remove dark box */
+        }
+
+        /* the colour when you hover over the nav bar  */
+        .navbar a:hover {
+            background-color: #555; /* Adjusted hover color to match contact page */
+            color: white;
+        }
+
+        /* Header styling  */
+        header {
+            text-align: center;
+            margin-top: 0;
+            position: relative;
+            top: 0px;
+        }
+
+        /* Styling for images within the container */
+        .container img {
+            max-width: 100%; 
+            height: auto; 
+        }
+
+       /*dark mode styling*/
+        body.dark-mode {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        .navbar.dark-mode {
+            background-color: #333;
+        }
+
+        .navbar.dark-mode a {
+            color: #fff;
+        }
+
+        .container.dark-mode {
+            border-color: #555;
+        }
+        
+    </style>
+</head>
+<body>
+
+<!--The Navigation bar which also includes the darkmode button -->
+<div class="navbar">
+    <a href="Homepage.html">Home</a>
+    <a href="Gallerypage.html">Gallery</a>
+    <a href="Contactpage.html">Contact</a>
+    <button id="darkModeToggle">Dark Mode</button> 
+    
+</div>
+
+
+<header>
+    <div class="container">
+        <!-- image here shows what the store looks like -->
+        <img src="images/GlowingGrates.Png" width="480" height="200">
+       
+        <h1>Glowing Grates</h1>
+        <!-- text here talks about what Glowing gates is and the opening times  -->
+        <h3>Welcome to Glowing Gates this website will show everything you need to know about Glowing Grates
+            Our opening times are Monday - Friday 9:30am - 4:30pm and Saturday 9:30am - 1pm
+        </h3>
+        
+       
+        <img src="images/Fireplace2.Png" width="300" height="280">
+        <br>
+        <h3>Glowing Grates has 40 years of experience in Gas & Solid fuel installation. 
+            <br>
+            We also install central heating, Bathrooms and Plumbing work as well.
+            We specialize in Gas, solid fuel heating, and bathroom installation.
+            <br>
+            If you have any inquiries then please head over to the contact page and fill in some information so we will be able to contact you 
+        </h3>
+        <img src ="images/Fireplace+Bathroom.Png" width="300" height="280">
+    </div>
+</header>
+
+
+
+</body>
+</html>

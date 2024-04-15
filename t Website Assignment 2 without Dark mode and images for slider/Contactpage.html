@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Grates Contact Form</title>
+    <style>
+        /* The CSS styles */
+
+        /* the font and what is being used*/
+        body {
+            background-color: #ddd;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        
+        /* Styling the border on the page */
+        .container {
+            max-width: 850px; 
+            margin: auto; 
+            border: 2px solid black; 
+            padding: 20px; 
+            margin-top: 5px;
+            text-align: center; /* Center the image */
+        }
+
+        /* nav bar styling */
+        .navbar {
+            background-color: #808080;
+            overflow: hidden;
+            text-align: center;
+            max-width: 900px; 
+            margin: auto; 
+        }
+
+        /* nav links styling */
+        .navbar a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            background-color: transparent; /* added to remove dark box */
+        }
+
+        /* nav links hover effect */
+        .navbar a:hover {
+            background-color: #555; /* Match hover color on the home page */
+            color: white;
+        }
+
+        /* Remove hover effect from navigation links on Contact page in dark mode */
+        .dark-mode .navbar a:hover {
+            background-color: #555; /* Adjusted hover color in dark mode */
+            color: white;
+        }
+
+        /* header being styled */
+        header {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        /*  This is all to do with the dark mode eg the position the and the styling on it for the nav bar and the link */
+        input[type="submit"] {
+            width: 150px;
+            height: 50px;
+            font-size: 16px;
+        }
+
+       
+        .dark-mode {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        .dark-mode .navbar {
+            background-color: #333; 
+        }
+
+        .dark-mode .navbar a {
+            color: #fff;
+        }
+
+        .dark-mode .container {
+            border-color: #555; /* Change border color in dark mode */
+        }
+    </style>
+</head>
+<body class="contact-page">
+
+<!--  The Navigation Bar -->
+<div class="navbar">
+    <a href="Homepage.html">Home</a>
+    <a href="Gallerypage.html">Gallery</a>
+    <a href="Contactpage.html">Contact</a>
+    <button id="darkModeToggle">Dark Mode</button> <!-- Allowing you to toggle the dark mode -->
+</div>
+
+
+<header>
+    <div class="container"> 
+        <h1>Our Contact</h1>
+        <h4>This is our Contact form here you will be able to contact us</h4>
+        <h4>You can find us on 
+            37 East Reach
+            Taunton TA1 3ES</h4>
+        <h4> Our Phone number is 01823 354585</h4>
+        <!-- Here is the contact form message and above it includes the location of the place and the phone number for it  -->
+        <form>
+            <h4>You can also contact us via email</h4>
+
+            <!-- inputting your email request -->
+            <label for="email">Please enter your email:</label>
+            <input type="email" id="email" name="email" placeholder="Please enter your email">
+            <br>
+            <br>
+            <!-- This will have a box which will ask you to write the questions and queries you have  -->
+            <label for="userText">Your question and queries</label><br>
+            <textarea id="userText" cols="40" rows="10"></textarea>
+        
+            <br>
+            <br>
+        
+            <!-- This here is the submit button which will allow you to submit it once you have filled in everything  -->
+            <input type="submit" value="Submit">
+        </form>
+        <br> <!--here is the google image which will be place to show the location of Glowing Grate-->
+        <img src="images/GoogleMap.Png"alt="Google Maps Image" style="max-width: 90%; border: 1px solid #000;">
+    </div>
+</header>
+
+
+</body>
+</html>
